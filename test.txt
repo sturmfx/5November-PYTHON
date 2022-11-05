@@ -1,0 +1,20 @@
+import tkinter
+import turtle
+from tkinter import ttk
+root = tkinter.Tk()
+t = turtle.Turtle()
+def btn_w():
+    t.forward(100)
+def btn_a():
+    t.left(90)
+    t.forward(100)
+def btn_d():
+    t.right(90)
+    t.forward(100)
+btn1 = ttk.Button(root, text="W", command=btn_w)
+btn1.pack(ipadx = 50, ipady = 50, expand = True)
+btn2 = ttk.Button(root, text="A", command=btn_a)
+btn2.pack(ipadx = 50, ipady = 50, expand = True)
+btn3 = ttk.Button(root, text="D", command=btn_d)
+btn3.pack(ipadx = 50, ipady = 50, expand = True)
+root.mainloop()
